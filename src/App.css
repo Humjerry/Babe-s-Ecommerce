@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martel:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.slideContainer{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+.slideImg{
+  width: 100vw;
+  height: 85vh;
+  position: relative;
+}
+.arrow{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0; 
+  top: 0;
+  position: absolute;
+}
+.text{
+  background-color: rgba(0, 0, 0, 0.661);
+  padding: 2rem;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text button{
+ padding: 10px;
+ width: 190px;
+height: 52px;
+color: white;
+font-family: "Montserrat", sans-serif;
+font-size: 18px;
+font-weight: 400;
+gap: 10px;
+border-radius: 5px;
+}
+.text button:hover{
+ padding: 10px;
+ width: 200px;
+/* height: 62px; */
+color: white;
+font-family: "Montserrat", sans-serif;
+font-size: 18px;
+font-weight: 400;
+gap: 10px;
+border-radius: 5px;
+}
+.text h1{
+font-family:"Montserrat", sans-serif;
+font-size: 58px;
+font-weight: 700;
+color: white;
+box-shadow: 1px black;
+text-align: center;
+}
+.text p{
+font-family: "Montserrat", sans-serif;
+font-size: 20px;
+color: white;
+font-weight: 500;
+line-height: 30px;
+text-align: center;
+}
+.prev, .next{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 60px;
+  height: 60px;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border: 1px solid gray;
+  box-shadow: 0 4px 8px rgba(0.2, 0, 0, 0.2);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.ordertwo{
+  overflow-y: scroll;
+}
+.costbtn{
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px ;
+  font-weight: 400;
+  border-radius: 5px;
+}
+.ordertwo::-webkit-scrollbar{
+display: none;
+}
+.thetext{
+  font-family: "Montserrat", sans-serif;
+  margin-top: 2rem;
+}
+.thetext h1{
+  font-family: "Martel", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+.costbt{
+  padding: 5px;
+  border-radius: 9px;
+  width: 150px;
+  height: 40px;
+  margin-top: 5px;
+}
+.thetext p{
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
