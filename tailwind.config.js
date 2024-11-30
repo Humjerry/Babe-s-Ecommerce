@@ -10,6 +10,7 @@ export default {
       darkblue: "#252b42",
       emerald: "#23856d",
       white: "#ffffff",
+      gray: "#fafafa",
     },
     extend: {
       textColor: ["visited"],

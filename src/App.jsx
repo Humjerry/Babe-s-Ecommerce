@@ -17,14 +17,14 @@ function App() {
       <CartProvider>
         <ToastContainer /> {/* ToastContainer should be global */}
         <BrowserRouter>
-            <Navbar />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/Navbar" element={<Navbar />} />
-              <Route path="/Firstshow" element={<Firstshow />} />
-              <Route path="/Itemdetail" element={<Itemdetail />} />
-              <Route path="/cartpage" element={<Cart/>} />
-            </Routes>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Navbar" element={<Navbar />} />
+            <Route path="/Firstshow" element={<Firstshow />} />
+            <Route path="/Itemdetail" element={<Itemdetail />} />
+            <Route path="/Cart" element={<Cart />} />
+          </Routes>
         </BrowserRouter>
       </CartProvider>
     </>

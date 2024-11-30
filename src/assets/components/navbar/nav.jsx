@@ -1,17 +1,17 @@
 import React, { useContext } from "react";
 // import BandageLogo from "../icons/bandagelogo";
 // import Cart from "../cart";
-import Favicon from "../../images/li.png"
 import Login from "../login";
-import {cartContext} from "../cartContext";
-import {Link} from 'react-router-dom'
+import { CiShoppingCart } from "react-icons/ci";
+import { cartContext } from "../cartContext";
+import { Link } from "react-router-dom";
 
 function Nav() {
-  const {cart} = useContext(cartContext);
+  const { cart } = useContext(cartContext);
   return (
     <header className="flex justify-around">
       <div className=" font-bold text-2xl mt-4 text-darkblue">
-       <h1>BABE's</h1> 
+        <h1>BABE's</h1>
       </div>
       <div className="">
         <div>
@@ -25,11 +25,13 @@ function Nav() {
           </ul>
         </div>
       </div>
-   <div className="userdiv flex justify-between items-center">
-   <Login />
-   <Link to="/cartpage"><img src={Favicon} alt="" /></Link>
-   <span>{cart.length}</span>
-   </div>
+      <div className="userdiv flex justify-between items-center">
+        <Login />
+        <Link to="/Cart">
+            <CiShoppingCart className=" size-8 color-blue" />
+            </Link>
+            {cart.length}
+      </div>
     </header>
   );
 }

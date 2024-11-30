@@ -1,26 +1,21 @@
 import React from "react";
-import { useContext } from "react";
-import { cartContext } from "./cartContext";
+import { useLocation } from "react-router-dom";
 
 function Cart() {
-  const { cart, setCart } = useContext(cartContext);
+  const location = useLocation();
+  const { item } = location.state || {}; // Fallback to avoid destructuring undefined
 
+  console.log("Cart Item:", item); // Debugging log
   return (
     <div>
-      {cart === 0 ? (
-        <p>Cart is Empty</p>
+      {item ? (
+        <div>
+          <h1>{item.title}</h1>
+          <p>{item.price}</p>
+          <img src={item.image} alt={item.title} />
+        </div>
       ) : (
-        <ul>
-          {cart.map((item) => (
-            <li key={item.id}>
-              <div>
-                <img src={item.image} alt="" />
-                <h1>{item.title}</h1>
-                <p>{item.price}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
+        <p>No item in cart</p>
       )}
     </div>
   );
